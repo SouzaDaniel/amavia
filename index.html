@@ -35,12 +35,27 @@
       .nav-unread {
         background-color: #fcff0a !important;
       }
-      th:first-child,
-      td:first-child {
-        width: 100%;
+      th:last-child,
+      td:last-child {
+        width: 1%;
+      }
+      th:nth-child(3),
+      td:nth-child(3) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
       .navbar .navbar-toggler {
         color: #ffffff;
+      }
+      .border-amavia {
+        border-bottom: 4px solid #2b9980 !important;
+      }
+      .empty-title.title {
+        font-size: 2rem !important;
+      }
+      .lh-1 {
+        line-height: 1;
       }
     </style>
   </head>
@@ -334,64 +349,34 @@
           <div class="col-12">
             <div class="card">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-3">
-                    <img
-                      src="https://github.com/tabler/tabler/blob/dev/demo/static/avatars/005m.jpg?raw=true"
-                      alt=""
-                      class="img-fluid rounded"
-                    />
-                  </div>
-                  <div class="col-5">
-                    <div class="d-flex flex-column">
-                      <h1 class="page-title">
-                        Cristóvão Silva Stevam Nascimento
-                      </h1>
-                      <span>Natal/RN</span>
-                      <span>Acesso: Revendedor On Amavia</span>
-                      <span>Status: Ativo</span>
+                <div class="row row-deck row-cards">
+                  <div class="col-md-4">
+                    <div class="card border-amavia">
+                      <div class="card-body p-4 text-center">
+                        <span
+                          class="avatar avatar-xl mb-3 avatar-rounded"
+                          style="
+                            background-image: url('https://rondoniaovivo.com/imagensNoticias/Designsemnome3(2).jpg');
+                          "
+                        ></span>
+                        <h3 class="m-0 mb-1"><a href="#">Maria Vitoria</a></h3>
+                        <div class="text-muted">Salvador - BA</div>
+                        <div class="mt-3">
+                          <span class="badge bg-green">Vendedora Online</span>
+                        </div>
+                        <div class="text-muted mt-3">Rede Amávia</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-2 ms-auto">
-                    <div class="card">
-                      <div class="card-body p-2 text-center">
-                        <div class="text-end text-green">
-                          <span
-                            class="
-                              text-green
-                              d-inline-flex
-                              align-items-center
-                              lh-1
-                            "
-                          >
-                            9%
-                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="icon ms-1"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              stroke-width="2"
-                              stroke="currentColor"
-                              fill="none"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            >
-                              <path
-                                stroke="none"
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                              ></path>
-                              <polyline
-                                points="3 17 9 11 13 15 21 7"
-                              ></polyline>
-                              <polyline points="14 7 21 7 21 14"></polyline>
-                            </svg>
-                          </span>
+                  <div class="col-md-8">
+                    <div class="d-flex flex-column w-100">
+                      <div class="card border-amavia">
+                        <div class="card-header">
+                          <h2 class="page-title">Evolução: Vendas x Estoque</h2>
                         </div>
-                        <div class="h1 m-0">7</div>
-                        <div class="text-muted mb-3">-</div>
+                        <div class="card-body">
+                          <div id="chart-temperature"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -435,7 +420,7 @@
                             </svg>
                           </span>
                         </div>
-                        <div class="h1 m-0">7</div>
+                        <div class="h1 m-0">R$ 5.549,01</div>
                         <div class="text-muted mb-3">
                           Total de vendas (mensal)
                         </div>
@@ -454,7 +439,7 @@
                               lh-1
                             "
                           >
-                            9%
+                            16%
                             <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -480,7 +465,7 @@
                             </svg>
                           </span>
                         </div>
-                        <div class="h1 m-0">7</div>
+                        <div class="h1 m-0">R$ 1.366,53</div>
                         <div class="text-muted mb-3">
                           Total de vendas (semanal)
                         </div>
@@ -493,17 +478,16 @@
                         <div class="text-end text-green">
                           <span
                             class="
-                              text-green
+                              text-red
                               d-inline-flex
                               align-items-center
                               lh-1
                             "
                           >
-                            9%
-                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            -14%
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              class="icon ms-1"
+                              class="icon"
                               width="24"
                               height="24"
                               viewBox="0 0 24 24"
@@ -517,15 +501,13 @@
                                 stroke="none"
                                 d="M0 0h24v24H0z"
                                 fill="none"
-                              ></path>
-                              <polyline
-                                points="3 17 9 11 13 15 21 7"
-                              ></polyline>
-                              <polyline points="14 7 21 7 21 14"></polyline>
+                              />
+                              <polyline points="3 7 9 13 13 9 21 17" />
+                              <polyline points="21 10 21 17 14 17" />
                             </svg>
                           </span>
                         </div>
-                        <div class="h1 m-0">7</div>
+                        <div class="h1 m-0">R$ 969,10</div>
                         <div class="text-muted mb-3">
                           Total de vendas (hoje)
                         </div>
@@ -544,7 +526,7 @@
                           text-center
                         "
                       >
-                        <div class="h1 m-0 text-green">+7</div>
+                        <div class="h1 m-0 text-green">+14%</div>
                         <div class="text-muted mb-3">
                           Comparação com mês anterior
                         </div>
@@ -555,6 +537,9 @@
                 <div class="row row-deck row-cards mt-3">
                   <div class="col-lg-4">
                     <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Resumo do Estoque</h3>
+                      </div>
                       <div class="empty">
                         <div class="empty-img">
                           <img
@@ -563,9 +548,13 @@
                             alt=""
                           />
                         </div>
-                        <p class="empty-title">152</p>
+                        <span class="empty-title title m-0 lh-1"> 218 </span>
+                        <p class="empty-subtitle text-muted mb-3">
+                          Total de itens
+                        </p>
+                        <p class="empty-title m-0 lh-1">R$ 12.849,00</p>
                         <p class="empty-subtitle text-muted">
-                          Produtos em estoque
+                          Valor total em mercadorias
                         </p>
                       </div>
                     </div>
@@ -573,21 +562,26 @@
                   <div class="col-lg-8">
                     <div class="card">
                       <div class="card-header">
-                        <h3 class="card-title">Produtos</h3>
+                        <h3 class="card-title">Produtos em seu Estoque</h3>
                       </div>
                       <div class="card-table table-responsive">
                         <table class="table table-vcenter">
                           <thead>
                             <tr>
                               <th>Produto</th>
-                              <th>Quantidade</th>
+                              <th>Quantidade em estoque</th>
+                              <th>Valor total</th>
                               <th>&nbsp;</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>
+                                SPRAY LISO PERFEITO MATIZADOR LOIRAS
+                                DESLUMBRANTES - 150ML
+                              </td>
+                              <td>25</td>
+                              <td>R$ 2.225,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -595,8 +589,12 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>
+                                MASCARA DISCIPLINANTE ANTIFRIZZ LOIRAS MAKE LISS
+                                AMAVIA - 300G
+                              </td>
+                              <td>13</td>
+                              <td>R$ 728,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -604,8 +602,11 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>
+                                SHAMPOO ULTRA HIDRATANTE MAKE CURL - 300ML
+                              </td>
+                              <td>13</td>
+                              <td>R$ 728,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -613,8 +614,9 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>SHAMPOO HIDRATANTE VEGAN COCONUT - 250ML</td>
+                              <td>3</td>
+                              <td>R$ 267,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -622,8 +624,11 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>
+                                CONDICIONADOR HIDRATANTE VEGAN COCONUT - 250ML
+                              </td>
+                              <td>33</td>
+                              <td>R$ 2.937,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -631,8 +636,22 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>
+                                CO WASH NO POO TODOS OS TIPOS DE CACHO MAKE CURL
+                                - 300ML
+                              </td>
+                              <td>112</td>
+                              <td>R$ 4.816,00</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>BALM PÓS BARBA HOMEM - 100ML</td>
+                              <td>19</td>
+                              <td>R$ 1.121,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -641,6 +660,11 @@
                             </tr>
                           </tbody>
                         </table>
+                        <div class="px-3 pb-3">
+                          <a href="#" class="btn btn-outline-info w-100">
+                            Ver mais
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -684,6 +708,97 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        window.ApexCharts &&
+          new ApexCharts(document.getElementById('chart-temperature'), {
+            chart: {
+              type: 'line',
+              fontFamily: 'inherit',
+              height: 240,
+              parentHeightOffset: 0,
+              toolbar: {
+                show: false,
+              },
+              animations: {
+                enabled: false,
+              },
+            },
+            fill: {
+              opacity: 1,
+            },
+            stroke: {
+              width: 2,
+              lineCap: 'round',
+              curve: 'smooth',
+            },
+            series: [
+              {
+                name: 'Tokyo',
+                data: [
+                  7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9,
+                  9.6,
+                ],
+              },
+              {
+                name: 'London',
+                data: [
+                  3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6,
+                  4.8,
+                ],
+              },
+            ],
+            grid: {
+              padding: {
+                top: -20,
+                right: 0,
+                left: -4,
+                bottom: -4,
+              },
+              strokeDashArray: 4,
+            },
+            dataLabels: {
+              enabled: true,
+            },
+            xaxis: {
+              labels: {
+                padding: 0,
+              },
+              tooltip: {
+                enabled: false,
+              },
+              categories: [
+                'Jan',
+                'Feb',
+                'Mar',
+                'Apr',
+                'May',
+                'Jun',
+                'Jul',
+                'Aug',
+                'Sep',
+                'Oct',
+                'Nov',
+                'Dec',
+              ],
+            },
+            yaxis: {
+              labels: {
+                padding: 4,
+              },
+            },
+            colors: ['#2b9980', '#ff8c00'],
+            legend: {
+              show: false,
+            },
+            markers: {
+              size: 2,
+            },
+          }).render();
+      });
+    </script>
   </body>
 </html>
