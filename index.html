@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Dashboard - Tabler - Premium and Open Source dashboard template with
+      responsive and high quality UI.
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://portal.amavia.technine.com.br/css/app.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      header {
+        background: #2b9980 !important;
+        color: white !important;
+      }
+      header .dropdown i {
+        color: #ffffff;
+      }
+      .nav-unread {
+        background-color: #fcff0a !important;
+      }
+      th:first-child,
+      td:first-child {
+        width: 100%;
+      }
+      .navbar .navbar-toggler {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <header class="navbar navbar-expand-md navbar-light d-print-none">
+      <div class="container-xl">
+        <button
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-menu"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a
+          href="https://portal.amavia.technine.com.br"
+          class="
+            navbar-brand navbar-brand-autodark
+            d-none-navbar-horizontal
+            pr-0 pr-md-3
+          "
+          ><img
+            src="https://portal.amavia.technine.com.br/uploads/configuracoes/logo-horizontal-branca-066021100-1622387775.png"
+            class="navbar-brand-image"
+        /></a>
+        <div class="navbar-nav flex-row order-md-last">
+          <div class="nav-item dropdown d-none d-md-flex me-3">
+            <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+              <a
+                data-toggle="modal"
+                data-target="#modal-busca"
+                class="nav-link px-0"
+                ><i class="fa fa-search"></i
+              ></a>
+            </div>
+            <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+              <a data-toggle="dropdown" class="nav-link px-0"
+                ><i class="fa fa-check-square"></i
+              ></a>
+            </div>
+            <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+              <a data-toggle="dropdown" class="nav-link px-0"
+                ><i class="fa fa-bullhorn faa-flash animated"></i>
+                <span class="badge nav-unread faa-flash animated"></span
+              ></a>
+            </div>
+            <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+              <a data-toggle="dropdown" class="nav-link px-0"
+                ><i class="fa fa-bell-o faa-flash animated"></i>
+                <span class="badge nav-unread faa-flash animated"></span
+              ></a>
+            </div>
+            <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+              <a data-toggle="dropdown" class="nav-link px-0"
+                ><i class="fa fa-video-camera faa-flash animated"></i>
+                <span class="badge nav-unread faa-flash animated"></span
+              ></a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              class="nav-link d-flex lh-1 text-reset p-0"
+              ><span
+                class="avatar avatar-sm me-1"
+                style="
+                  background-image: url('https://portal.amavia.technine.com.br/uploads/usuario/adm-icon-031766700-1620156003.png');
+                "
+              ></span>
+              <div class="d-none d-xl-block pl-2">
+                <div class="text-user-name">Administrador</div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-expand-md">
+      <div id="navbar-menu" class="collapse navbar-collapse">
+        <div class="navbar navbar-light">
+          <div class="container-xl">
+            <ul class="navbar-nav">
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-row flex-md-column
+                  active
+                "
+              >
+                <a href="https://portal.amavia.technine.com.br" class="nav-link"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                      <path
+                        d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"
+                      ></path>
+                      <path
+                        d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"
+                      ></path></svg
+                  ></span>
+                  <span class="nav-link-title"> Início </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-video-camera"></i
+                  ></span>
+                  <span class="nav-link-title"> Vídeos </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-bullhorn"></i
+                  ></span>
+                  <span class="nav-link-title"> Comunicados </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-folder-open"></i
+                  ></span>
+                  <span class="nav-link-title"> Arquivos </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-check"></i
+                  ></span>
+                  <span class="nav-link-title"> Solicitações </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                  <span class="nav-link-title"> Fornecimento </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-tasks"></i
+                  ></span>
+                  <span class="nav-link-title"> Consultoria </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                  dropdown
+                "
+              >
+                <a
+                  href="#navbar-base"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle w-100"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-caret-square-o-down"></i
+                  ></span>
+                  <span class="nav-link-title"> Outros </span></a
+                >
+              </li>
+              <li
+                class="
+                  nav-item
+                  justify-content-start justify-content-md-center
+                  flex-column flex-md-row
+                  align-items-start align-items-md-center
+                "
+              >
+                <a
+                  href="https://portal.amavia.technine.com.br/menu-admin"
+                  class="nav-link"
+                  ><span class="nav-link-icon d-md-none d-lg-inline-block"
+                    ><i class="fa fa-lock"></i
+                  ></span>
+                  <span class="nav-link-title"> ADM </span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-body">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-3">
+                    <img
+                      src="https://github.com/tabler/tabler/blob/dev/demo/static/avatars/005m.jpg?raw=true"
+                      alt=""
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                  <div class="col-5">
+                    <div class="d-flex flex-column">
+                      <h1 class="page-title">
+                        Cristóvão Silva Stevam Nascimento
+                      </h1>
+                      <span>Natal/RN</span>
+                      <span>Acesso: Revendedor On Amavia</span>
+                      <span>Status: Ativo</span>
+                    </div>
+                  </div>
+                  <div class="col-2 ms-auto">
+                    <div class="card">
+                      <div class="card-body p-2 text-center">
+                        <div class="text-end text-green">
+                          <span
+                            class="
+                              text-green
+                              d-inline-flex
+                              align-items-center
+                              lh-1
+                            "
+                          >
+                            9%
+                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="icon ms-1"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              ></path>
+                              <polyline
+                                points="3 17 9 11 13 15 21 7"
+                              ></polyline>
+                              <polyline points="14 7 21 7 21 14"></polyline>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="h1 m-0">7</div>
+                        <div class="text-muted mb-3">-</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-deck row-cards mt-0">
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body p-2 text-center">
+                        <div class="text-end text-green">
+                          <span
+                            class="
+                              text-green
+                              d-inline-flex
+                              align-items-center
+                              lh-1
+                            "
+                          >
+                            9%
+                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="icon ms-1"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              ></path>
+                              <polyline
+                                points="3 17 9 11 13 15 21 7"
+                              ></polyline>
+                              <polyline points="14 7 21 7 21 14"></polyline>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="h1 m-0">7</div>
+                        <div class="text-muted mb-3">
+                          Total de vendas (mensal)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body p-2 text-center">
+                        <div class="text-end text-green">
+                          <span
+                            class="
+                              text-green
+                              d-inline-flex
+                              align-items-center
+                              lh-1
+                            "
+                          >
+                            9%
+                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="icon ms-1"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              ></path>
+                              <polyline
+                                points="3 17 9 11 13 15 21 7"
+                              ></polyline>
+                              <polyline points="14 7 21 7 21 14"></polyline>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="h1 m-0">7</div>
+                        <div class="text-muted mb-3">
+                          Total de vendas (semanal)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body p-2 text-center">
+                        <div class="text-end text-green">
+                          <span
+                            class="
+                              text-green
+                              d-inline-flex
+                              align-items-center
+                              lh-1
+                            "
+                          >
+                            9%
+                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="icon ms-1"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              ></path>
+                              <polyline
+                                points="3 17 9 11 13 15 21 7"
+                              ></polyline>
+                              <polyline points="14 7 21 7 21 14"></polyline>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="h1 m-0">7</div>
+                        <div class="text-muted mb-3">
+                          Total de vendas (hoje)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div
+                        class="
+                          card-body
+                          d-flex
+                          flex-column
+                          justify-content-end
+                          p-2
+                          text-center
+                        "
+                      >
+                        <div class="h1 m-0 text-green">+7</div>
+                        <div class="text-muted mb-3">
+                          Comparação com mês anterior
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-deck row-cards mt-3">
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <div class="empty">
+                        <div class="empty-img">
+                          <img
+                            src="https://preview.tabler.io/static/illustrations/undraw_quitting_time_dm8t.svg"
+                            height="128"
+                            alt=""
+                          />
+                        </div>
+                        <p class="empty-title">152</p>
+                        <p class="empty-subtitle text-muted">
+                          Produtos em estoque
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Produtos</h3>
+                      </div>
+                      <div class="card-table table-responsive">
+                        <table class="table table-vcenter">
+                          <thead>
+                            <tr>
+                              <th>Produto</th>
+                              <th>Quantidade</th>
+                              <th>&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Máscara</td>
+                              <td>4</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Máscara</td>
+                              <td>4</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Máscara</td>
+                              <td>4</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Máscara</td>
+                              <td>4</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Máscara</td>
+                              <td>4</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Máscara</td>
+                              <td>4</td>
+                              <td>
+                                <button class="btn btn-light">
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center flex-row-reverse">
+            <div
+              class="
+                col-12
+                text-center
+                d-flex
+                justify-content-between
+                align-items-center
+                flex-column flex-sm-row
+              "
+            >
+              <span class="mb-5 mb-sm-0"
+                ><a href="https://technine.com.br"
+                  ><img
+                    src="https://portal.amavia.technine.com.br/images/portal/logo_horizontal.png"
+                    height="35"
+                    alt="Portal do Franqueado"
+                    title="Portal do Franqueado" /></a
+              ></span>
+              <span class="mb-5 mb-sm-0"
+                ><a href="https://technine.com.br"
+                  ><img
+                    src="https://portal.amavia.technine.com.br/images/portal/logo-horizontal.svg"
+                    height="35" /></a
+              ></span>
+              <span> Copyright © 2021. </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
+  </body>
+</html>
