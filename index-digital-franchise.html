@@ -35,15 +35,33 @@
       .nav-unread {
         background-color: #fcff0a !important;
       }
-      .table-products th:first-child,
-      .table-products td:first-child {
-        width: 100%;
+      th:last-child,
+      td:last-child {
+        width: 1%;
+      }
+      th:nth-child(3),
+      td:nth-child(3) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
       .navbar .navbar-toggler {
         color: #ffffff;
       }
-      .img-avatar {
-        max-width: 150px !important;
+      .border-amavia {
+        border-bottom: 4px solid #2b9980 !important;
+      }
+      .empty-title.title {
+        font-size: 2rem !important;
+      }
+      .lh-1 {
+        line-height: 1;
+      }
+      .img-stock {
+        height: 160px !important;
+      }
+      .img-cover {
+        object-fit: cover !important;
       }
     </style>
     <style type="text/css">
@@ -62,7 +80,7 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        background: #c6cad0;
+        background: #f59f00;
         overflow: hidden;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -377,352 +395,112 @@
     </div>
     <div class="page-body">
       <div class="container-xl">
-        <div class="row">
-          <div data-v-56c34496="" class="col-12">
-            <!---->
+        <div class="row gy-3">
+          <div class="col-12">
             <div
-              data-v-56c34496=""
               id="carousel-controls"
               data-ride="carousel"
               data-interval="10000"
               class="carousel slide"
             >
-              <div data-v-56c34496="" class="carousel-inner">
-                <div data-v-56c34496="" class="carousel-item active">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
                   <img
-                    data-v-56c34496=""
                     alt=""
                     src="https://portal.amavia.technine.com.br/uploads/vitrine/vitrine-portal-amavia-054120200-1621511620.jpg"
                     data-holder-rendered="true"
-                    class="d-block w-100 br-50"
+                    class="d-block w-100 br-50 rounded"
                   />
                 </div>
               </div>
               <a
-                data-v-56c34496=""
                 href="#carousel-controls"
                 role="button"
                 data-slide="prev"
                 class="carousel-control-prev"
                 ><span
-                  data-v-56c34496=""
                   aria-hidden="true"
                   class="carousel-control-prev-icon"
                 ></span>
-                <span data-v-56c34496="" class="sr-only">Anterior</span></a
+                <span class="sr-only">Anterior</span></a
               >
               <a
-                data-v-56c34496=""
                 href="#carousel-controls"
                 role="button"
                 data-slide="next"
                 class="carousel-control-next"
-                style=""
                 ><span
-                  data-v-56c34496=""
                   aria-hidden="true"
                   class="carousel-control-next-icon"
                 ></span>
-                <span data-v-56c34496="" class="sr-only">Próximo</span></a
+                <span class="sr-only">Próximo</span></a
               >
             </div>
           </div>
-          <div data-v-cb5ba6be="" class="col-12 mt-3">
-            <div data-v-cb5ba6be="" class="row">
-              <div data-v-cb5ba6be="" class="page-header d-print-none">
-                <div data-v-cb5ba6be="" class="row align-items-center">
-                  <div data-v-cb5ba6be="" class="col">
-                    <h2 data-v-cb5ba6be="" class="page-title">Comunicados</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div data-v-cb5ba6be="" class="row">
-              <div data-v-cb5ba6be="" class="mb-3 col-xs-12 col-md-6">
-                <div data-v-cb5ba6be="" class="card card-sm">
-                  <a
-                    data-v-cb5ba6be=""
-                    href="https://portal.amavia.technine.com.br/comunicados/86"
-                    class="d-block img-zoom-container"
-                    ><img
-                      data-v-cb5ba6be=""
-                      src="https://portal.amavia.technine.com.br/uploads/imagem/novo-comunicado-totvs-prancheta-1-096945100-1621867880.jpg"
-                      alt="ERRO DE ASSINCRONIZAÇÃO SEFAZ"
-                      class="card-img-top img-zoom-scale-20"
-                  /></a>
-                  <div
-                    data-v-cb5ba6be=""
-                    class="card-body py-0 position-absolute bottom-0"
-                  >
-                    <div data-v-cb5ba6be="">
-                      <div data-v-cb5ba6be="" class="mb-1">
-                        <span
-                          data-v-cb5ba6be=""
-                          class="badge bg-cor-primaria-escura"
-                          >Suporte TOTVS</span
-                        >
-                        <span data-v-cb5ba6be="" class="badge bg-cor-primaria"
-                          >Out/05</span
-                        >
-                      </div>
-                      <div data-v-cb5ba6be="">
-                        <a
-                          data-v-cb5ba6be=""
-                          href="https://portal.amavia.technine.com.br/comunicados/86"
-                          class="text-muted"
-                          ><h2
-                            data-v-cb5ba6be=""
-                            class="comunicado-title py-1 px-2"
-                          >
-                            ERRO DE ASSINCRONIZAÇÃO SEFAZ
-                          </h2></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-v-cb5ba6be="" class="mb-3 col-xs-12 col-md-6">
-                <div data-v-cb5ba6be="" class="card card-sm">
-                  <a
-                    data-v-cb5ba6be=""
-                    href="https://portal.amavia.technine.com.br/comunicados/85"
-                    class="d-block img-zoom-container"
-                    ><img
-                      data-v-cb5ba6be=""
-                      src="https://portal.amavia.technine.com.br/uploads/comunicados/615c4f3aad308.png"
-                      alt="Top 10 Vendedores - Setembro 2021"
-                      class="card-img-top img-zoom-scale-20"
-                  /></a>
-                  <div
-                    data-v-cb5ba6be=""
-                    class="card-body py-0 position-absolute bottom-0"
-                  >
-                    <div data-v-cb5ba6be="">
-                      <div data-v-cb5ba6be="" class="mb-1">
-                        <span
-                          data-v-cb5ba6be=""
-                          class="badge bg-cor-primaria-escura"
-                          >Diretoria</span
-                        >
-                        <span data-v-cb5ba6be="" class="badge bg-cor-primaria"
-                          >Out/05</span
-                        >
-                      </div>
-                      <div data-v-cb5ba6be="">
-                        <a
-                          data-v-cb5ba6be=""
-                          href="https://portal.amavia.technine.com.br/comunicados/85"
-                          class="text-muted"
-                          ><h2
-                            data-v-cb5ba6be=""
-                            class="comunicado-title py-1 px-2"
-                          >
-                            Top 10 Vendedores - Setembro 2021
-                          </h2></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-v-cb5ba6be="" class="mb-3 col-xs-12 col-md-4">
-                <div data-v-cb5ba6be="" class="card card-sm">
-                  <a
-                    data-v-cb5ba6be=""
-                    href="https://portal.amavia.technine.com.br/comunicados/84"
-                    class="d-block img-zoom-container"
-                    ><img
-                      data-v-cb5ba6be=""
-                      src="https://portal.amavia.technine.com.br/uploads/comunicados/615c4e2483e48.png"
-                      alt="Top 10 Faturamento - Setembro 2021"
-                      class="card-img-top img-zoom-scale-20"
-                  /></a>
-                  <div
-                    data-v-cb5ba6be=""
-                    class="card-body py-0 position-absolute bottom-0"
-                  >
-                    <div data-v-cb5ba6be="">
-                      <div data-v-cb5ba6be="" class="mb-1">
-                        <span
-                          data-v-cb5ba6be=""
-                          class="badge bg-cor-primaria-escura"
-                          >Diretoria</span
-                        >
-                        <span data-v-cb5ba6be="" class="badge bg-cor-primaria"
-                          >Out/05</span
-                        >
-                      </div>
-                      <div data-v-cb5ba6be="">
-                        <a
-                          data-v-cb5ba6be=""
-                          href="https://portal.amavia.technine.com.br/comunicados/84"
-                          class="text-muted"
-                          ><h2
-                            data-v-cb5ba6be=""
-                            class="comunicado-title py-1 px-2"
-                          >
-                            Top 10 Faturamento - Setembro 2021
-                          </h2></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-v-cb5ba6be="" class="mb-3 col-xs-12 col-md-4">
-                <div data-v-cb5ba6be="" class="card card-sm">
-                  <a
-                    data-v-cb5ba6be=""
-                    href="https://portal.amavia.technine.com.br/comunicados/83"
-                    class="d-block img-zoom-container"
-                    ><img
-                      data-v-cb5ba6be=""
-                      src="https://portal.amavia.technine.com.br/uploads/comunicados/61549f231be75.png"
-                      alt="Material CP Dia das Crianças disponível "
-                      class="card-img-top img-zoom-scale-20"
-                  /></a>
-                  <div
-                    data-v-cb5ba6be=""
-                    class="card-body py-0 position-absolute bottom-0"
-                  >
-                    <div data-v-cb5ba6be="">
-                      <div data-v-cb5ba6be="" class="mb-1">
-                        <span
-                          data-v-cb5ba6be=""
-                          class="badge bg-cor-primaria-escura"
-                          >Marketing - ( Criação, autorizações e sugestões
-                          )</span
-                        >
-                        <span data-v-cb5ba6be="" class="badge bg-cor-primaria"
-                          >Set/29</span
-                        >
-                      </div>
-                      <div data-v-cb5ba6be="">
-                        <a
-                          data-v-cb5ba6be=""
-                          href="https://portal.amavia.technine.com.br/comunicados/83"
-                          class="text-muted"
-                          ><h2
-                            data-v-cb5ba6be=""
-                            class="comunicado-title py-1 px-2"
-                          >
-                            Material CP Dia das Crianças disponível
-                          </h2></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-v-cb5ba6be="" class="mb-3 col-xs-12 col-md-4">
-                <div data-v-cb5ba6be="" class="card card-sm">
-                  <a
-                    data-v-cb5ba6be=""
-                    href="https://portal.amavia.technine.com.br/comunicados/82"
-                    class="d-block img-zoom-container"
-                    ><img
-                      data-v-cb5ba6be=""
-                      src="https://portal.amavia.technine.com.br/uploads/comunicados/614cee4510793.png"
-                      alt="Parceria Lojas e Quiosques BAHIA"
-                      class="card-img-top img-zoom-scale-20"
-                  /></a>
-                  <div
-                    data-v-cb5ba6be=""
-                    class="card-body py-0 position-absolute bottom-0"
-                  >
-                    <div data-v-cb5ba6be="">
-                      <div data-v-cb5ba6be="" class="mb-1">
-                        <span
-                          data-v-cb5ba6be=""
-                          class="badge bg-cor-primaria-escura"
-                          >Marketing - ( Criação, autorizações e sugestões
-                          )</span
-                        >
-                        <span data-v-cb5ba6be="" class="badge bg-cor-primaria"
-                          >Set/23</span
-                        >
-                      </div>
-                      <div data-v-cb5ba6be="">
-                        <a
-                          data-v-cb5ba6be=""
-                          href="https://portal.amavia.technine.com.br/comunicados/82"
-                          class="text-muted"
-                          ><h2
-                            data-v-cb5ba6be=""
-                            class="comunicado-title py-1 px-2"
-                          >
-                            Parceria Lojas e Quiosques BAHIA
-                          </h2></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mt-3">
+          <div class="col-12">
             <div class="card">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-auto">
-                    <img
-                      src="https://github.com/tabler/tabler/blob/dev/demo/static/avatars/005m.jpg?raw=true"
-                      alt=""
-                      class="img-avatar rounded"
-                    />
-                  </div>
-                  <div class="col col-md-5">
-                    <div class="d-flex flex-column">
-                      <h1 class="page-title">
-                        Cristóvão Silva Stevam Nascimento
-                      </h1>
-                      <span>Natal/RN</span>
-                      <span>Acesso: Revendedor On Amavia</span>
-                      <span>Status: Ativo</span>
+                <div class="row row-deck row-cards">
+                  <div class="col-md-6">
+                    <div data-v-cb5ba6be="" class="card card-sm border-amavia">
+                      <a
+                        data-v-cb5ba6be=""
+                        href="https://portal.amavia.technine.com.br/comunicados/84"
+                        class="d-block img-zoom-container h-100"
+                        ><img
+                          data-v-cb5ba6be=""
+                          src="https://portal.amavia.technine.com.br/uploads/comunicados/615c4e2483e48.png"
+                          alt="Top 10 Faturamento - Setembro 2021"
+                          class="
+                            card-img-top
+                            img-zoom-scale-20
+                            h-100
+                            img-cover
+                          "
+                      /></a>
+                      <div
+                        data-v-cb5ba6be=""
+                        class="card-body py-0 position-absolute bottom-0"
+                      >
+                        <div data-v-cb5ba6be="">
+                          <div data-v-cb5ba6be="" class="mb-1">
+                            <span
+                              data-v-cb5ba6be=""
+                              class="badge bg-cor-primaria-escura"
+                              >Diretoria</span
+                            >
+                            <span
+                              data-v-cb5ba6be=""
+                              class="badge bg-cor-primaria"
+                              >Out/05</span
+                            >
+                          </div>
+                          <div data-v-cb5ba6be="">
+                            <a
+                              data-v-cb5ba6be=""
+                              href="https://portal.amavia.technine.com.br/comunicados/84"
+                              class="text-muted"
+                              ><h2
+                                data-v-cb5ba6be=""
+                                class="comunicado-title py-1 px-2"
+                              >
+                                Top 10 Faturamento - Setembro 2021
+                              </h2></a
+                            >
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-2 ms-auto mt-2 mt-md-0">
-                    <div class="card">
-                      <div class="card-body p-2 text-center">
-                        <div class="text-end text-green">
-                          <span
-                            class="
-                              text-green
-                              d-inline-flex
-                              align-items-center
-                              lh-1
-                            "
-                          >
-                            9%
-                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="icon ms-1"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              stroke-width="2"
-                              stroke="currentColor"
-                              fill="none"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            >
-                              <path
-                                stroke="none"
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                              ></path>
-                              <polyline
-                                points="3 17 9 11 13 15 21 7"
-                              ></polyline>
-                              <polyline points="14 7 21 7 21 14"></polyline>
-                            </svg>
-                          </span>
+                  <div class="col-md-6">
+                    <div class="d-flex flex-column w-100">
+                      <div class="card border-amavia">
+                        <div class="card-header">
+                          <h2 class="page-title">Evolução: Vendas x Estoque</h2>
                         </div>
-                        <div class="h1 m-0">7</div>
-                        <div class="text-muted mb-3">-</div>
+                        <div class="card-body">
+                          <div id="chart-temperature"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -741,7 +519,7 @@
                             "
                           >
                             9%
-                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               class="icon ms-1"
@@ -766,7 +544,7 @@
                             </svg>
                           </span>
                         </div>
-                        <div class="h1 m-0">7</div>
+                        <div class="h1 m-0">R$ 5.549,01</div>
                         <div class="text-muted mb-3">
                           Total de vendas (mensal)
                         </div>
@@ -785,8 +563,8 @@
                               lh-1
                             "
                           >
-                            9%
-                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            16%
+
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               class="icon ms-1"
@@ -811,7 +589,7 @@
                             </svg>
                           </span>
                         </div>
-                        <div class="h1 m-0">7</div>
+                        <div class="h1 m-0">R$ 1.366,53</div>
                         <div class="text-muted mb-3">
                           Total de vendas (semanal)
                         </div>
@@ -824,17 +602,16 @@
                         <div class="text-end text-green">
                           <span
                             class="
-                              text-green
+                              text-red
                               d-inline-flex
                               align-items-center
                               lh-1
                             "
                           >
-                            9%
-                            <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                            -14%
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              class="icon ms-1"
+                              class="icon"
                               width="24"
                               height="24"
                               viewBox="0 0 24 24"
@@ -848,15 +625,13 @@
                                 stroke="none"
                                 d="M0 0h24v24H0z"
                                 fill="none"
-                              ></path>
-                              <polyline
-                                points="3 17 9 11 13 15 21 7"
-                              ></polyline>
-                              <polyline points="14 7 21 7 21 14"></polyline>
+                              />
+                              <polyline points="3 7 9 13 13 9 21 17" />
+                              <polyline points="21 10 21 17 14 17" />
                             </svg>
                           </span>
                         </div>
-                        <div class="h1 m-0">7</div>
+                        <div class="h1 m-0">R$ 969,10</div>
                         <div class="text-muted mb-3">
                           Total de vendas (hoje)
                         </div>
@@ -875,7 +650,7 @@
                           text-center
                         "
                       >
-                        <div class="h1 m-0 text-green">+7</div>
+                        <div class="h1 m-0 text-green">+9%</div>
                         <div class="text-muted mb-3">
                           Comparação com mês anterior
                         </div>
@@ -883,42 +658,43 @@
                     </div>
                   </div>
                 </div>
-                <div class="row row-deck row-cards mt-3">
-                  <div class="col-lg-4">
-                    <div class="card">
-                      <div class="empty">
-                        <div class="empty-img">
-                          <img
-                            src="https://preview.tabler.io/static/illustrations/undraw_quitting_time_dm8t.svg"
-                            height="128"
-                            alt=""
-                          />
-                        </div>
-                        <p class="empty-title">152</p>
-                        <p class="empty-subtitle text-muted">
-                          Produtos em estoque
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-8">
+                <div class="row mt-3">
+                  <div class="col-12">
                     <div class="card">
                       <div class="card-header">
-                        <h3 class="card-title">Produtos</h3>
+                        <h3 class="card-title">
+                          Ranking de Vendas - Afiliados
+                        </h3>
                       </div>
                       <div class="card-table table-responsive">
-                        <table class="table table-vcenter table-products">
+                        <table class="table table-vcenter">
                           <thead>
                             <tr>
-                              <th>Produto</th>
-                              <th>Quantidade</th>
+                              <th>&nbsp;</th>
+                              <th>&nbsp;</th>
+                              <th>Nome</th>
+                              <th>Quantidade de items vendidos</th>
+                              <th>Valor total vendido</th>
+                              <th>Total comissão</th>
                               <th>&nbsp;</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>1º</td>
+                              <td class="w-1">
+                                <span
+                                  class="avatar"
+                                  style="
+                                    background-image: url('https://rondoniaovivo.com/imagensNoticias/Designsemnome3(2).jpg');
+                                    --tblr-avatar-size: 3rem;
+                                  "
+                                ></span>
+                              </td>
+                              <td>Maria Vitória</td>
+                              <td>400</td>
+                              <td>R$ 23.600,00</td>
+                              <td>R$ 3.540,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -926,8 +702,20 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>2º</td>
+                              <td class="w-1">
+                                <span
+                                  class="avatar"
+                                  style="
+                                    background-image: url('https://s2.glbimg.com/d9Joki81F4U2gaZq2m3y4ExN_lI=/0x310:2000x1673/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/O/8/5eEPesR2Cv0KfUoDCLtA/agl2918-1.jpg');
+                                    --tblr-avatar-size: 3rem;
+                                  "
+                                ></span>
+                              </td>
+                              <td>João Alberto</td>
+                              <td>322</td>
+                              <td>R$ 16.251,08</td>
+                              <td>R$ 2.453,00</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -935,8 +723,20 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>3º</td>
+                              <td class="w-1">
+                                <span
+                                  class="avatar"
+                                  style="
+                                    background-image: url('https://conteudo.imguol.com.br/c/entretenimento/2013/11/26/loira-a-atriz-maria-helena-chira-tingiu-os-fios-para-viver-a-apresentadora-lara-keller-em-sangue-bom-da-globo-1385496255939_300x200.png');
+                                    --tblr-avatar-size: 3rem;
+                                  "
+                                ></span>
+                              </td>
+                              <td>Yasmin Rocha</td>
+                              <td>315</td>
+                              <td>R$ 15.180,00</td>
+                              <td>R$ 1.898,37</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -944,26 +744,20 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
-                              <td>
-                                <button class="btn btn-light">
-                                  Ver detalhes
-                                </button>
+                              <td>4º</td>
+                              <td class="w-1">
+                                <span
+                                  class="avatar"
+                                  style="
+                                    background-image: url('https://media.ceert.org.br/portal-3/img/noticias/originais/20171003-11-coisas-esquisitas-que-mulheres-negras-ja-ouviram.jpg');
+                                    --tblr-avatar-size: 3rem;
+                                  "
+                                ></span>
                               </td>
-                            </tr>
-                            <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
-                              <td>
-                                <button class="btn btn-light">
-                                  Ver detalhes
-                                </button>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>Máscara</td>
-                              <td>4</td>
+                              <td>Vanessa Machado</td>
+                              <td>209</td>
+                              <td>R$ 12.356,00</td>
+                              <td>R$ 1.143,09</td>
                               <td>
                                 <button class="btn btn-light">
                                   Ver detalhes
@@ -972,6 +766,174 @@
                             </tr>
                           </tbody>
                         </table>
+                        <div class="px-3 pb-3">
+                          <a href="#" class="btn btn-outline-secondary w-100">
+                            VER LISTA COMPLETA
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-deck row-cards mt-3">
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Resumo do Estoque</h3>
+                      </div>
+                      <div class="empty">
+                        <div class="empty-img">
+                          <img
+                            src="./assets/stock.png"
+                            height="128"
+                            class="img-stock"
+                          />
+                        </div>
+                        <span class="empty-title title m-0 lh-1"> 218 </span>
+                        <p class="empty-subtitle text-muted mb-3">
+                          Total de itens
+                        </p>
+                        <p class="empty-title m-0 lh-1">R$ 12.849,00</p>
+                        <p class="empty-subtitle text-muted">
+                          Valor total em mercadorias
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Produtos em seu Estoque</h3>
+                      </div>
+                      <div class="card-table table-responsive">
+                        <table class="table table-vcenter">
+                          <thead>
+                            <tr>
+                              <th>Produto</th>
+                              <th>Quantidade em estoque</th>
+                              <th>Valor total</th>
+                              <th>&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                SPRAY LISO PERFEITO MATIZADOR LOIRAS
+                                DESLUMBRANTES - 150ML
+                              </td>
+                              <td>25</td>
+                              <td>R$ 2.225,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                MASCARA DISCIPLINANTE ANTIFRIZZ LOIRAS MAKE LISS
+                                AMAVIA - 300G
+                              </td>
+                              <td>13</td>
+                              <td>R$ 728,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                SHAMPOO ULTRA HIDRATANTE MAKE CURL - 300ML
+                              </td>
+                              <td>13</td>
+                              <td>R$ 728,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>SHAMPOO HIDRATANTE VEGAN COCONUT - 250ML</td>
+                              <td>3</td>
+                              <td>R$ 267,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                CONDICIONADOR HIDRATANTE VEGAN COCONUT - 250ML
+                              </td>
+                              <td>33</td>
+                              <td>R$ 2.937,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                CO WASH NO POO TODOS OS TIPOS DE CACHO MAKE CURL
+                                - 300ML
+                              </td>
+                              <td>112</td>
+                              <td>R$ 4.816,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>BALM PÓS BARBA HOMEM - 100ML</td>
+                              <td>19</td>
+                              <td>R$ 1.121,00</td>
+                              <td>
+                                <button
+                                  class="btn btn-light"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modal-large"
+                                >
+                                  Ver detalhes
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="px-3 pb-3">
+                          <a href="#" class="btn btn-outline-secondary w-100">
+                            VER MAIS
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -979,8 +941,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 mt-3">
-            <div class="page-header">
+          <div class="col-12">
+            <div class="page-header m-0">
               <h2 class="section-title mb-0">Solicitações</h2>
             </div>
             <div class="row">
@@ -1040,6 +1002,190 @@
       </footer>
     </div>
 
+    <div
+      class="modal modal-blur fade"
+      id="modal-large"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalhes do produto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-5">
+                <img
+                  src="https://tfcqb6.vteximg.com.br/arquivos/ids/155875-1000-1000/MAKE-LISS-MASC-DISP-LOIRAS.jpg?v=637496032569200000"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col">
+                <div>
+                  <h2 class="page-title">
+                    MASCARA DISCIPLINANTE ANTIFRIZZ LOIRAS MAKE LISS AMAVIA -
+                    300G
+                  </h2>
+
+                  <div class="card mt-3">
+                    <div class="card-body p-2 text-center p-3">
+                      <div class="row gy-2">
+                        <div class="col-lg-6">
+                          <div class="h1 m-0">13</div>
+                          <div class="text-muted">Quantidade em estoque</div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="h1 m-0">R$ 728,00</div>
+                          <div class="text-muted">Valor total</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div>
+                  <h2 class="card-title">Descrição</h2>
+                  <p>
+                    Com ácido hialurônico, óleo de coco colágeno vegetal e
+                    pigmentos violeta.
+                  </p>
+                  <p>200g</p>
+                  <p>
+                    A Máscara Disciplinante Make Liss possui uma extraordinária
+                    combinação de ativos que hidratam profundamente os fios e
+                    favorecem a selagem e alinhamento das cutículas. O Ácido
+                    Hialurônico tem o poder de preencher os espaços entre as
+                    células, sendo responsável por reparar os danos. Além disso,
+                    é uma molécula capaz de reter alta quantidade de água dentro
+                    da fibra capilar, mantendo o cabelo muito hidratado e
+                    resistente a quebra. O óleo de coco aumenta o brilho e
+                    maciez, facilitando ainda o pentear e pranchar dos cabelos.
+                    Já o Colágeno, quando em contato com a haste capilar, forma
+                    um filme disciplinante que reduz o frizz e combate as pontas
+                    duplas.
+                  </p>
+                  <p>
+                    Modo de usar: Após lavar os cabelos com shampoo
+                    anti-resíduo, secar 100% e aplicar a Make Liss Máscara
+                    Disciplinante por toda a extensão do fio. Deixar agir por 30
+                    minutos e em seguida enxaguar bastante. Para efeito liso
+                    duradouro, desembaraçar com pente, secar 100% e finalizar
+                    com prancha.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn ms-auto" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        window.ApexCharts &&
+          new ApexCharts(document.getElementById('chart-temperature'), {
+            chart: {
+              type: 'line',
+              fontFamily: 'inherit',
+              height: 240,
+              parentHeightOffset: 0,
+              toolbar: {
+                show: false,
+              },
+              animations: {
+                enabled: false,
+              },
+            },
+            fill: {
+              opacity: 1,
+            },
+            stroke: {
+              width: 2,
+              lineCap: 'round',
+              curve: 'smooth',
+            },
+            series: [
+              {
+                name: 'Vendas',
+                data: [
+                  7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9,
+                  9.6,
+                ],
+              },
+              {
+                name: 'Estoque',
+                data: [
+                  3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6,
+                  4.8,
+                ],
+              },
+            ],
+            grid: {
+              padding: {
+                top: -20,
+                right: 0,
+                left: -4,
+                bottom: -4,
+              },
+              strokeDashArray: 4,
+            },
+            dataLabels: {
+              enabled: true,
+            },
+            xaxis: {
+              labels: {
+                padding: 0,
+              },
+              tooltip: {
+                enabled: false,
+              },
+              categories: [
+                'Jan',
+                'Fev',
+                'Mar',
+                'Abr',
+                'Mai',
+                'Jun',
+                'Jul',
+                'Ago',
+                'Set',
+                'Out',
+                'Nov',
+                'Dez',
+              ],
+            },
+            yaxis: {
+              labels: {
+                padding: 4,
+              },
+            },
+            colors: ['#2b9980', '#ff8c00'],
+            legend: {
+              show: false,
+            },
+            markers: {
+              size: 2,
+            },
+          }).render();
+      });
+    </script>
   </body>
 </html>
